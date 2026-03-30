@@ -41,4 +41,3 @@ This setup provides a controlled environment for:
 * Detection engineering using SPL (Search Processing Language)
 * Security event analysis and investigation
 
-This environment simulates a basic SOC (Security Operations Center) workflow for hands-on cybersecurity practice.
