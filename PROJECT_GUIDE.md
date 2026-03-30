@@ -20,33 +20,25 @@ The lab replicates real-world SOC workflows including log ingestion, detection e
 - Document findings in a structured, professional format
 
 ---
+## ⚙️ Environment Setup
 
-## 🧱 Lab Environment
+A virtualized SOC lab environment was created using Ubuntu Linux on Oracle VirtualBox to simulate real-world security monitoring conditions.
 
-### 🛠️ Technologies Used
+### 🔧 Setup Process
 
-- Splunk Enterprise (SIEM)
-- Ubuntu Linux
-- Oracle VirtualBox
+The following steps were performed to configure the environment:
 
----
+* Installed Splunk Enterprise using the `.deb` package on Ubuntu
+* Configured system permissions to allow Splunk to access log files
+* Started and verified Splunk services
+* Accessed the Splunk Web Interface via browser (`http://localhost:8000`)
 
-## ⚙️ Implementation
+### 🧠 Purpose
 
-### 1️⃣ Environment Setup
+This setup provides a controlled environment for:
 
-A virtualized lab environment was created using Ubuntu Linux on VirtualBox.
+* Log ingestion and monitoring
+* Detection engineering using SPL (Search Processing Language)
+* Security event analysis and investigation
 
-Key steps:
-
-- Installed Splunk Enterprise (.deb package)
-- Configured file permissions
-- Started Splunk services
-- Accessed the Splunk web interface
-
-#### Commands Used
-
-```bash
-sudo dpkg -i splunk-<version>.deb
-sudo chown -R $USER:$USER /opt/splunk
-/opt/splunk/bin/splunk start --accept-license
+This environment simulates a basic SOC (Security Operations Center) workflow for hands-on cybersecurity practice.
