@@ -33,6 +33,19 @@ The following steps were performed to configure the environment:
 * Started and verified Splunk services
 * Accessed the Splunk Web Interface via browser (`http://localhost:8000`)
 
+ ## 📥 Log Ingestion & Validation
+
+This phase focuses on onboarding Linux authentication logs into Splunk SIEM, ensuring proper data visibility, and validating successful ingestion for downstream security analysis.
+
+---
+
+### 🔍 Log Source Identification
+
+The primary data source for this lab is the Linux authentication log:
+
+```bash
+/var/log/auth.log
+
 ### 🧠 Purpose
 
 This setup provides a controlled environment for:
