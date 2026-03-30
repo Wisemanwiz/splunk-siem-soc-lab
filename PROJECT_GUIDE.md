@@ -22,9 +22,9 @@ The lab replicates real-world SOC workflows including log ingestion, detection e
 ---
 ## ⚙️ Environment Setup
 
-A virtualized SOC lab environment was created using Ubuntu Linux on Oracle VirtualBox to simulate real-world security monitoring conditions.
+A virtualized SOC lab environment was built using Ubuntu Linux on Oracle VirtualBox to simulate real-world security monitoring and threat detection workflows.
 
-### 🔧 Setup Process
+### 🔧 Configuration Steps
 
 The following steps were performed to configure the environment:
 
