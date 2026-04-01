@@ -41,7 +41,7 @@ This ensures real-time log activity before ingestion.
 
 📸 **Output verification:**
 
-![Log Verification](screenshots/1_log_verification.png)
+![Data Input](../log-ingestion/screenshots/4_log_ingestion.png)
 ---
 
 ### Step 2: Configure File Permissions
