@@ -56,7 +56,8 @@ sudo chown splunk:splunk /var/log/auth.log
 This allows the Splunk service to read the log file.
 
 📸 **Permission configuration:**
-![Permissions](./screenshots/2_data_input_config.png)
+
+![Permissions](screenshots/2_data_input_config.png)
 
 ---
 
