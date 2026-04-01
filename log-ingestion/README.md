@@ -39,6 +39,10 @@ sudo tail -f /var/log/auth.log
 
 This ensures real-time log activity before ingestion.
 
+📸 **Output verification:**
+
+![Log Verification](./screenshots/1_log_verification.png)
+
 ---
 
 ### Step 2: Configure File Permissions
@@ -51,6 +55,9 @@ sudo chown splunk:splunk /var/log/auth.log
 ```
 
 This allows the Splunk service to read the log file.
+
+📸 **Permission configuration:**
+![Permissions](./screenshots/2_data_input_config.png)
 
 ---
 
@@ -77,6 +84,10 @@ Apply permission changes by restarting Splunk:
 
 This enables continuous monitoring of the authentication log.
 
+📸 **Splunk data input setup:**
+
+![Data Input](./screenshots/4_log_ingestion.png)
+
 ---
 
 ### Step 5: Define Source Type
@@ -98,6 +109,10 @@ Run the following SPL query:
 ```bash
 index=main source="/var/log/auth.log"
 ```
+📸 **Search result in splunk:**
+
+![Validation](./screenshots/5_attack_simulation.png)
+
 
 ---
 
