@@ -41,7 +41,7 @@ This ensures real-time log activity before ingestion.
 
 📸 **Log verification output:**
 
-![Log Verification](screenshots/1_log_verification.png)
+![Log Verification](./screenshots/1_log_verification.png)
 
 ---
 
@@ -58,7 +58,7 @@ This allows the Splunk service to read the log file.
 
 📸 **Permission configuration:**
 
-![Permissions](screenshots/2_data_input_config.png)
+![Permissions](./screenshots/2_data_input_config.png)
 
 ---
 
@@ -69,6 +69,7 @@ Apply permission changes by restarting Splunk:
 ```bash
 /opt/splunk/bin/splunk restart
 ```
+![Source Type](./screenshots/3_source_type_index.png)
 
 ---
 
@@ -87,8 +88,7 @@ This enables continuous monitoring of the authentication log.
 
 📸 **Splunk data input configuration:**
 
-![Data Input](screenshots/4_log_ingestion.png)
-
+![Data Input Config](./screenshots/2_data_input_config.png)
 ---
 
 ### Step 5: Define Source Type
@@ -103,8 +103,7 @@ This ensures proper parsing, timestamp recognition, and field extraction.
 
 📸 **Source type configuration:**
 
-![Source Type](screenshots/3_source_type_index.png)
-
+![Attack Simulation](./screenshots/5_attack_simulation.png)
 ---
 
 ### Step 6: Validate Data Ingestion
@@ -117,7 +116,7 @@ index=main source="/var/log/auth.log"
 
 📸 **Log ingestion results in Splunk:**
 
-![Ingestion Result](screenshots/4_log_ingestion.png)
+![Failed Login Detection](./screenshots/6_failed_login_detection.png)
 
 ---
 
@@ -130,9 +129,9 @@ index=main source="/var/log/auth.log"
 
 📸 **Attack simulation & detection validation:**
 
-![Attack Simulation](screenshots/5_attack_simulation.png)
 
-![Failed Login Detection](screenshots/6_failed_login_detection.png)
+
+![Failed Login Detection](./screenshots/6_failed_login_detection.png)
 
 ---
 
