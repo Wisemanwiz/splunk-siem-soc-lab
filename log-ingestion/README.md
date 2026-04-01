@@ -39,9 +39,10 @@ sudo tail -f /var/log/auth.log
 
 This ensures real-time log activity before ingestion.
 
-📸 **Output verification:**
+📸 **Log verification output:**
 
-![Data Input](../log-ingestion/screenshots/4_log_ingestion.png)
+![Log Verification](screenshots/1_log_verification.png)
+
 ---
 
 ### Step 2: Configure File Permissions
@@ -84,9 +85,9 @@ Apply permission changes by restarting Splunk:
 
 This enables continuous monitoring of the authentication log.
 
-📸 **Splunk data input setup:**
+📸 **Splunk data input configuration:**
 
-![Data Input](screenshots/2_data_input_config.png)
+![Data Input](screenshots/4_log_ingestion.png)
 
 ---
 
@@ -100,6 +101,10 @@ linux_secure
 
 This ensures proper parsing, timestamp recognition, and field extraction.
 
+📸 **Source type configuration:**
+
+![Source Type](screenshots/3_source_type_index.png)
+
 ---
 
 ### Step 6: Validate Data Ingestion
@@ -109,10 +114,10 @@ Run the following SPL query:
 ```bash
 index=main source="/var/log/auth.log"
 ```
-📸 **Search result in splunk:**
 
-![Validation](./screenshots/5_attack_simulation.png)
+📸 **Log ingestion results in Splunk:**
 
+![Ingestion Result](screenshots/4_log_ingestion.png)
 
 ---
 
@@ -122,6 +127,12 @@ index=main source="/var/log/auth.log"
 * Events properly parsed using `linux_secure` sourcetype
 * Authentication activity visible and searchable
 * Environment ready for detection and analysis
+
+📸 **Attack simulation & detection validation:**
+
+![Attack Simulation](screenshots/5_attack_simulation.png)
+
+![Failed Login Detection](screenshots/6_failed_login_detection.png)
 
 ---
 
