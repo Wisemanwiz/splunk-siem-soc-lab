@@ -41,8 +41,7 @@ This ensures real-time log activity before ingestion.
 
 📸 **Output verification:**
 
-![Log Verification](./screenshots/1_log_verification.png)
-
+![Log Verification](screenshots/1_log_verification.png)
 ---
 
 ### Step 2: Configure File Permissions
@@ -86,7 +85,7 @@ This enables continuous monitoring of the authentication log.
 
 📸 **Splunk data input setup:**
 
-![Data Input](./screenshots/4_log_ingestion.png)
+![Data Input](screenshots/2_data_input_config.png)
 
 ---
 
