@@ -37,11 +37,9 @@ Confirm that authentication logs are being generated:
 sudo tail -f /var/log/auth.log
 ```
 
-This ensures real-time log activity before ingestion.
-
 📸 **Log verification output:**
 
-![Log Verification](./screenshots/1_log_verification.png)
+![Log Verification](screenshots/1_log_verification.png)
 
 ---
 
@@ -54,12 +52,6 @@ sudo chmod 644 /var/log/auth.log
 sudo chown splunk:splunk /var/log/auth.log
 ```
 
-This allows the Splunk service to read the log file.
-
-📸 **Permission configuration:**
-
-![Permissions](./screenshots/2_data_input_config.png)
-
 ---
 
 ### Step 3: Restart Splunk Service
@@ -69,7 +61,6 @@ Apply permission changes by restarting Splunk:
 ```bash
 /opt/splunk/bin/splunk restart
 ```
-![Source Type](./screenshots/3_source_type_index.png)
 
 ---
 
@@ -84,11 +75,10 @@ Apply permission changes by restarting Splunk:
 /var/log/auth.log
 ```
 
-This enables continuous monitoring of the authentication log.
+📸 **Data input configuration:**
 
-📸 **Splunk data input configuration:**
+![Data Input Config](screenshots/2_data_input_config.png)
 
-![Data Input Config](./screenshots/2_data_input_config.png)
 ---
 
 ### Step 5: Define Source Type
@@ -99,11 +89,10 @@ Set the sourcetype as:
 linux_secure
 ```
 
-This ensures proper parsing, timestamp recognition, and field extraction.
-
 📸 **Source type configuration:**
 
-![Attack Simulation](./screenshots/5_attack_simulation.png)
+![Source Type](screenshots/3_source_type_index.png)
+
 ---
 
 ### Step 6: Validate Data Ingestion
@@ -114,9 +103,9 @@ Run the following SPL query:
 index=main source="/var/log/auth.log"
 ```
 
-📸 **Log ingestion results in Splunk:**
+📸 **Log ingestion validation:**
 
-![Failed Login Detection](./screenshots/6_failed_login_detection.png)
+![Log Ingestion](screenshots/4_log_ingestion.png)
 
 ---
 
@@ -127,11 +116,13 @@ index=main source="/var/log/auth.log"
 * Authentication activity visible and searchable
 * Environment ready for detection and analysis
 
-📸 **Attack simulation & detection validation:**
+📸 **Attack simulation:**
 
+![Attack Simulation](screenshots/5_attack_simulation.png)
 
+📸 **Failed login detection:**
 
-![Failed Login Detection](./screenshots/6_failed_login_detection.png)
+![Failed Login Detection](screenshots/6_failed_login_detection.png)
 
 ---
 
