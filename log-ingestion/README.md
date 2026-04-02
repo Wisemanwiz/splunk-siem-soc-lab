@@ -39,7 +39,7 @@ sudo tail -f /var/log/auth.log
 
 📸 **Log verification output:**
 
-![Log Verification](screenshots/1_log_verification.png)
+![Log Verification](screenshorts/1_log_verification.png)
 
 ---
 
@@ -77,7 +77,7 @@ Apply permission changes by restarting Splunk:
 
 📸 **Data input configuration:**
 
-![Data Input Config](screenshots/2_data_input_config.png)
+![Data Input Config](screenshorts/2_data_input_config.png)
 
 ---
 
@@ -91,7 +91,7 @@ linux_secure
 
 📸 **Source type configuration:**
 
-![Source Type](screenshots/3_source_type_index.png)
+![Source Type](screenshorts/3_source_type_index.png)
 
 ---
 
@@ -105,7 +105,7 @@ index=main source="/var/log/auth.log"
 
 📸 **Log ingestion validation:**
 
-![Log Ingestion](screenshots/4_log_ingestion.png)
+![Log Ingestion](screenshorts/4_log_ingestion.png)
 
 ---
 
@@ -118,11 +118,11 @@ index=main source="/var/log/auth.log"
 
 📸 **Attack simulation:**
 
-![Attack Simulation](screenshots/5_attack_simulation.png)
+![Attack Simulation](screenshorts/5_attack_simulation.png)
 
 📸 **Failed login detection:**
 
-![Failed Login Detection](screenshots/6_failed_login_detection.png)
+![Failed Login Detection](screenshorts/6_failed_login_detection.png)
 
 ---
 
