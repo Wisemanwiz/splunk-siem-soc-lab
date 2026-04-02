@@ -103,10 +103,7 @@ Run the following SPL query:
 index=main source="/var/log/auth.log"
 ```
 
-📸 **Log ingestion validation:**
-
-![Log Ingestion](screenshorts/4_log_ingestion.png)
-
+[Log ingestion](screenshorts/4_log_ingestion.png)
 ---
 
 ## 📊 Validation Results
