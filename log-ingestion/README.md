@@ -102,8 +102,9 @@ Run the following SPL query:
 ```bash
 index=main source="/var/log/auth.log"
 ```
+📸 **Log ingestion Validation:**
 
-[Log ingestion](screenshorts/4_log_ingestion.png)
+![Log ingestion](screenshorts/4_log_injestion.png)
 ---
 
 ## 📊 Validation Results
